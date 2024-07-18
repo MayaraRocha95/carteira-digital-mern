@@ -14,4 +14,8 @@ async function findByEmail(email) {
 async function generateToken(id) {
   return Jwt.sign({ id }, process.env.SECRETE, { expiresIn: "86400" });
 }
-export default { create, findByEmail, generateToken };
+async function findById(id) {
+  const user = await UserShema.findById( id );
+  return user;
+}
+export default { create, findByEmail, generateToken, findById };
