@@ -4,6 +4,10 @@ async function create(data){
 return TransactionShema.create(data);
 }
 
+async function findAllByUser(id){
+    return TransactionShema.find({userId: id});
+}
 export default {
-    create
+    create,
+    findAllByUser
 }
