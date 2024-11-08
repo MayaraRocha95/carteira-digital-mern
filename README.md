@@ -1,5 +1,6 @@
 # Carteira Digital - Projeto MERN
 
+
 Carteira Digital desenvolvida com a stack MERN (MongoDB, Express, React, Node.js). O sistema permite aos usuários gerenciar suas finanças pessoais de maneira segura e eficiente.
 
 ## Funcionalidades
